@@ -1,0 +1,50 @@
+{
+    "status": "profiled",
+    "summary": {
+        "original_rows": 10000,
+        "complete_case_rows": 10000,
+        "excluded_rows": 0,
+        "predictor_count": 5,
+        "matrix_rank": 5,
+        "rank_deficient": false,
+        "constant_columns": []
+    },
+    "columns": [
+        {
+            "column_name": "Air temperature [K]",
+            "r_squared": 0.7676568547156724,
+            "vif": 4.303978922107901,
+            "severity": "low"
+        },
+        {
+            "column_name": "Process temperature [K]",
+            "r_squared": 0.7675925492612474,
+            "vif": 4.302788042385493,
+            "severity": "low"
+        },
+        {
+            "column_name": "Rotational speed [rpm]",
+            "r_squared": 0.7658152108575612,
+            "vif": 4.270132162135294,
+            "severity": "low"
+        },
+        {
+            "column_name": "Torque [Nm]",
+            "r_squared": 0.7657448694342357,
+            "vif": 4.268849939742353,
+            "severity": "low"
+        },
+        {
+            "column_name": "Tool wear [min]",
+            "r_squared": 0.00023733784431756444,
+            "vif": 1.0002373941869422,
+            "severity": "low"
+        }
+    ],
+    "interpretation_warning": "VIF depends on the selected predictor set. High VIF does not automatically justify feature removal.",
+    "source": {
+        "file_name": "ai4i2020.csv",
+        "file_hash": "dc6630cd9b1f0f853922fad78a1b6436570d3f1ec863f1dd5c4340ac56bc8a8e"
+    },
+    "profiling_seconds": 0.0141
+}

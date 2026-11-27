@@ -28,11 +28,78 @@ ingestion:
   calculate_file_hash: true
 
 profiling:
+  enabled: true
+
   detect_column_types: true
   detect_candidate_keys: true
   detect_missing_values: true
   detect_duplicates: true
   calculate_distributions: true
+
+  structural:
+    enabled: true
+
+  statistical:
+    enabled: true
+    percentiles:
+      - 0.01
+      - 0.05
+      - 0.25
+      - 0.50
+      - 0.75
+      - 0.95
+      - 0.99
+
+  missing_values:
+    enabled: true
+    warning_threshold: 10
+    critical_threshold: 40
+    max_pattern_columns: 30
+    critical_columns: []
+
+  outliers:
+    enabled: true
+    iqr_multiplier: 1.5
+    zscore_threshold: 3.0
+    mad_threshold: 3.5
+    min_observations: 4
+    consensus_threshold: 2
+    excluded_columns: []
+
+  relationships:
+    enabled: true
+
+    pearson: true
+    spearman: true
+    kendall: true
+
+    significance_level: 0.05
+    correlation_threshold: 0.8
+
+    min_observations: 10
+
+    max_numeric_columns: 50
+    max_categorical_columns: 20
+    max_categories: 30
+
+    excluded_columns: []
+
+  temporal:
+    enabled: true
+    date_columns: []
+    dayfirst: false
+    max_missing_days_reported: 100
+
+  multicollinearity:
+    enabled: true
+    warning_threshold: 5
+    critical_threshold: 10
+    max_predictors: 30
+    predictor_columns: []
+
+  reporting:
+    export_json: true
+    include_sample_records: false
 
 validation:
   missing_value_warning_threshold: 10

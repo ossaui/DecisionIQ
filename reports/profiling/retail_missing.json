@@ -1,0 +1,116 @@
+{
+    "summary": {
+        "total_cells": 4203688,
+        "missing_cells": 110855,
+        "missing_percentage": 2.6371,
+        "completeness_percentage": 97.3629,
+        "complete_rows": 417534,
+        "incomplete_rows": 107927,
+        "fully_missing_rows": 0,
+        "complete_row_percentage": 79.4605,
+        "affected_columns": 2
+    },
+    "severity_summary": {
+        "complete": 6,
+        "low": 1,
+        "warning": 1,
+        "critical": 0,
+        "empty": 0
+    },
+    "business_critical_issues": [],
+    "unmapped_critical_columns": [],
+    "columns": [
+        {
+            "column_name": "Customer ID",
+            "missing_count": 107927,
+            "missing_percentage": 20.5395,
+            "completeness_percentage": 79.4605,
+            "severity": "warning",
+            "business_critical": false,
+            "recommended_action": "Investigate missingness patterns and evaluate suitable treatment."
+        },
+        {
+            "column_name": "Description",
+            "missing_count": 2928,
+            "missing_percentage": 0.5572,
+            "completeness_percentage": 99.4428,
+            "severity": "low",
+            "business_critical": false,
+            "recommended_action": "Monitor missingness and assess whether treatment is necessary."
+        },
+        {
+            "column_name": "Invoice",
+            "missing_count": 0,
+            "missing_percentage": 0.0,
+            "completeness_percentage": 100.0,
+            "severity": "complete",
+            "business_critical": false,
+            "recommended_action": "No missing-value action required."
+        },
+        {
+            "column_name": "StockCode",
+            "missing_count": 0,
+            "missing_percentage": 0.0,
+            "completeness_percentage": 100.0,
+            "severity": "complete",
+            "business_critical": false,
+            "recommended_action": "No missing-value action required."
+        },
+        {
+            "column_name": "Quantity",
+            "missing_count": 0,
+            "missing_percentage": 0.0,
+            "completeness_percentage": 100.0,
+            "severity": "complete",
+            "business_critical": false,
+            "recommended_action": "No missing-value action required."
+        },
+        {
+            "column_name": "InvoiceDate",
+            "missing_count": 0,
+            "missing_percentage": 0.0,
+            "completeness_percentage": 100.0,
+            "severity": "complete",
+            "business_critical": false,
+            "recommended_action": "No missing-value action required."
+        },
+        {
+            "column_name": "Price",
+            "missing_count": 0,
+            "missing_percentage": 0.0,
+            "completeness_percentage": 100.0,
+            "severity": "complete",
+            "business_critical": false,
+            "recommended_action": "No missing-value action required."
+        },
+        {
+            "column_name": "Country",
+            "missing_count": 0,
+            "missing_percentage": 0.0,
+            "completeness_percentage": 100.0,
+            "severity": "complete",
+            "business_critical": false,
+            "recommended_action": "No missing-value action required."
+        }
+    ],
+    "missingness_patterns": {
+        "columns_examined": 2,
+        "columns_with_missing_values": 2,
+        "analysis_truncated": false,
+        "total_matching_pairs": 1,
+        "top_co_missing_patterns": [
+            {
+                "column_a": "Customer ID",
+                "column_b": "Description",
+                "both_missing_count": 2928,
+                "jaccard_similarity": 0.0271
+            }
+        ]
+    },
+    "source": {
+        "file_name": "online_retail_II.xlsx",
+        "file_hash": "bcbe73b35f5b7babf197fb0cb983a11f5d9ff929078d4aa53d171b1f2df2e980",
+        "industry": "retail"
+    },
+    "profiling_seconds": 0.166
+}

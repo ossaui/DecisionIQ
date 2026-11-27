@@ -5,3 +5,19 @@
 ingestion:
   encoding: utf-8
   csv_separator: ","
+
+profiling:
+  outliers:
+    excluded_columns:
+      - UDI
+  relationships:
+    excluded_columns:
+      - UDI
+      - Product ID
+  multicollinearity:
+    predictor_columns:
+      - Air temperature [K]
+      - Process temperature [K]
+      - Rotational speed [rpm]
+      - Torque [Nm]
+      - Tool wear [min]

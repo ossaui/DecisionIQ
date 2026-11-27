@@ -6,3 +6,8 @@ business:
 ingestion:
   excel_sheet: 0
   max_file_size_mb: 250
+
+profiling:
+  temporal:
+    date_columns:
+      - InvoiceDate

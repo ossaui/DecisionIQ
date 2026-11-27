@@ -1,0 +1,706 @@
+{
+    "numeric_column_count": 12,
+    "numeric_columns": [
+        "UDI",
+        "Air temperature [K]",
+        "Process temperature [K]",
+        "Rotational speed [rpm]",
+        "Torque [Nm]",
+        "Tool wear [min]",
+        "Machine failure",
+        "TWF",
+        "HDF",
+        "PWF",
+        "OSF",
+        "RNF"
+    ],
+    "columns": [
+        {
+            "column_name": "UDI",
+            "valid_count": 10000,
+            "missing_count": 0,
+            "infinite_count": 0,
+            "status": "profiled",
+            "central_tendency": {
+                "mean": 5000.5,
+                "median": 5000.5,
+                "modes": [],
+                "mode_frequency": 1,
+                "mode_count": 0
+            },
+            "dispersion": {
+                "variance": 8334166.666666667,
+                "standard_deviation": 2886.8956799071675,
+                "range": 9999.0,
+                "iqr": 4999.5,
+                "median_absolute_deviation": 2500.0,
+                "coefficient_of_variation_pct": 57.73214038410494
+            },
+            "position": {
+                "minimum": 1.0,
+                "maximum": 10000.0,
+                "q1": 2500.75,
+                "q2": 5000.5,
+                "q3": 7500.25
+            },
+            "percentiles": {
+                "0.01": 100.99000000000001,
+                "0.05": 500.95000000000005,
+                "0.25": 2500.75,
+                "0.5": 5000.5,
+                "0.75": 7500.25,
+                "0.95": 9500.05,
+                "0.99": 9900.01
+            },
+            "distribution": {
+                "skewness": 0.0,
+                "excess_kurtosis": -1.1999999999999995,
+                "shape": "approximately_symmetric",
+                "normality": {
+                    "test": "dagostino_pearson",
+                    "statistic": 8698.026597300552,
+                    "p_value": 0.0,
+                    "significance_level": 0.05,
+                    "conclusion": "reject_normality"
+                }
+            },
+            "value_composition": {
+                "zero_count": 0,
+                "positive_count": 10000,
+                "negative_count": 0
+            }
+        },
+        {
+            "column_name": "Air temperature [K]",
+            "valid_count": 10000,
+            "missing_count": 0,
+            "infinite_count": 0,
+            "status": "profiled",
+            "central_tendency": {
+                "mean": 300.00493,
+                "median": 300.1,
+                "modes": [
+                    300.7
+                ],
+                "mode_frequency": 279,
+                "mode_count": 1
+            },
+            "dispersion": {
+                "variance": 4.001034798579858,
+                "standard_deviation": 2.0002586829157516,
+                "range": 9.199999999999989,
+                "iqr": 3.1999999999999886,
+                "median_absolute_deviation": 1.6000000000000227,
+                "coefficient_of_variation_pct": 0.666741937512744
+            },
+            "position": {
+                "minimum": 295.3,
+                "maximum": 304.5,
+                "q1": 298.3,
+                "q2": 300.1,
+                "q3": 301.5
+            },
+            "percentiles": {
+                "0.01": 295.9,
+                "0.05": 297.1,
+                "0.25": 298.3,
+                "0.5": 300.1,
+                "0.75": 301.5,
+                "0.95": 303.5,
+                "0.99": 304.1
+            },
+            "distribution": {
+                "skewness": 0.1142739205215533,
+                "excess_kurtosis": -0.8359616725774692,
+                "shape": "approximately_symmetric",
+                "normality": {
+                    "test": "dagostino_pearson",
+                    "statistic": 1026.938503819825,
+                    "p_value": 1.0072499825447258e-223,
+                    "significance_level": 0.05,
+                    "conclusion": "reject_normality"
+                }
+            },
+            "value_composition": {
+                "zero_count": 0,
+                "positive_count": 10000,
+                "negative_count": 0
+            }
+        },
+        {
+            "column_name": "Process temperature [K]",
+            "valid_count": 10000,
+            "missing_count": 0,
+            "infinite_count": 0,
+            "status": "profiled",
+            "central_tendency": {
+                "mean": 310.00555999999995,
+                "median": 310.1,
+                "modes": [
+                    310.6
+                ],
+                "mode_frequency": 317,
+                "mode_count": 1
+            },
+            "dispersion": {
+                "variance": 2.2014672331233114,
+                "standard_deviation": 1.4837342191657208,
+                "range": 8.100000000000023,
+                "iqr": 2.3000000000000114,
+                "median_absolute_deviation": 1.1000000000000227,
+                "coefficient_of_variation_pct": 0.47861535746833733
+            },
+            "position": {
+                "minimum": 305.7,
+                "maximum": 313.8,
+                "q1": 308.8,
+                "q2": 310.1,
+                "q3": 311.1
+            },
+            "percentiles": {
+                "0.01": 306.6,
+                "0.05": 307.7,
+                "0.25": 308.8,
+                "0.5": 310.1,
+                "0.75": 311.1,
+                "0.95": 312.5,
+                "0.99": 313.2
+            },
+            "distribution": {
+                "skewness": 0.015027267769234081,
+                "excess_kurtosis": -0.49973436501614293,
+                "shape": "approximately_symmetric",
+                "normality": {
+                    "test": "dagostino_pearson",
+                    "statistic": 191.26773789965173,
+                    "p_value": 2.9291285510027176e-42,
+                    "significance_level": 0.05,
+                    "conclusion": "reject_normality"
+                }
+            },
+            "value_composition": {
+                "zero_count": 0,
+                "positive_count": 10000,
+                "negative_count": 0
+            }
+        },
+        {
+            "column_name": "Rotational speed [rpm]",
+            "valid_count": 10000,
+            "missing_count": 0,
+            "infinite_count": 0,
+            "status": "profiled",
+            "central_tendency": {
+                "mean": 1538.7761,
+                "median": 1503.0,
+                "modes": [
+                    1452.0
+                ],
+                "mode_frequency": 48,
+                "mode_count": 1
+            },
+            "dispersion": {
+                "variance": 32142.78704749475,
+                "standard_deviation": 179.2840959134266,
+                "range": 1718.0,
+                "iqr": 189.0,
+                "median_absolute_deviation": 91.0,
+                "coefficient_of_variation_pct": 11.651083995483592
+            },
+            "position": {
+                "minimum": 1168.0,
+                "maximum": 2886.0,
+                "q1": 1423.0,
+                "q2": 1503.0,
+                "q3": 1612.0
+            },
+            "percentiles": {
+                "0.01": 1275.0,
+                "0.05": 1332.0,
+                "0.25": 1423.0,
+                "0.5": 1503.0,
+                "0.75": 1612.0,
+                "0.95": 1868.0499999999993,
+                "0.99": 2188.01
+            },
+            "distribution": {
+                "skewness": 1.993171004713753,
+                "excess_kurtosis": 7.392944899246483,
+                "shape": "highly_right_skewed",
+                "normality": {
+                    "test": "dagostino_pearson",
+                    "statistic": 4395.347068975414,
+                    "p_value": 0.0,
+                    "significance_level": 0.05,
+                    "conclusion": "reject_normality"
+                }
+            },
+            "value_composition": {
+                "zero_count": 0,
+                "positive_count": 10000,
+                "negative_count": 0
+            }
+        },
+        {
+            "column_name": "Torque [Nm]",
+            "valid_count": 10000,
+            "missing_count": 0,
+            "infinite_count": 0,
+            "status": "profiled",
+            "central_tendency": {
+                "mean": 39.986909999999995,
+                "median": 40.1,
+                "modes": [
+                    40.2
+                ],
+                "mode_frequency": 52,
+                "mode_count": 1
+            },
+            "dispersion": {
+                "variance": 99.37963961586159,
+                "standard_deviation": 9.968933725121337,
+                "range": 72.8,
+                "iqr": 13.599999999999994,
+                "median_absolute_deviation": 6.799999999999997,
+                "coefficient_of_variation_pct": 24.93049281657757
+            },
+            "position": {
+                "minimum": 3.8,
+                "maximum": 76.6,
+                "q1": 33.2,
+                "q2": 40.1,
+                "q3": 46.8
+            },
+            "percentiles": {
+                "0.01": 16.7,
+                "0.05": 23.5,
+                "0.25": 33.2,
+                "0.5": 40.1,
+                "0.75": 46.8,
+                "0.95": 56.1,
+                "0.99": 62.8
+            },
+            "distribution": {
+                "skewness": -0.009516595840060154,
+                "excess_kurtosis": -0.013240614017022511,
+                "shape": "approximately_symmetric",
+                "normality": {
+                    "test": "dagostino_pearson",
+                    "statistic": 0.21260705444450384,
+                    "p_value": 0.8991516896381224,
+                    "significance_level": 0.05,
+                    "conclusion": "normality_not_rejected"
+                }
+            },
+            "value_composition": {
+                "zero_count": 0,
+                "positive_count": 10000,
+                "negative_count": 0
+            }
+        },
+        {
+            "column_name": "Tool wear [min]",
+            "valid_count": 10000,
+            "missing_count": 0,
+            "infinite_count": 0,
+            "status": "profiled",
+            "central_tendency": {
+                "mean": 107.951,
+                "median": 108.0,
+                "modes": [
+                    0.0
+                ],
+                "mode_frequency": 120,
+                "mode_count": 1
+            },
+            "dispersion": {
+                "variance": 4051.850384038404,
+                "standard_deviation": 63.65414663663636,
+                "range": 253.0,
+                "iqr": 109.0,
+                "median_absolute_deviation": 55.0,
+                "coefficient_of_variation_pct": 58.96577765526615
+            },
+            "position": {
+                "minimum": 0.0,
+                "maximum": 253.0,
+                "q1": 53.0,
+                "q2": 108.0,
+                "q3": 162.0
+            },
+            "percentiles": {
+                "0.01": 0.0,
+                "0.05": 9.950000000000045,
+                "0.25": 53.0,
+                "0.5": 108.0,
+                "0.75": 162.0,
+                "0.95": 206.04999999999927,
+                "0.99": 222.0
+            },
+            "distribution": {
+                "skewness": 0.027292239050452968,
+                "excess_kurtosis": -1.1667371315780544,
+                "shape": "approximately_symmetric",
+                "normality": {
+                    "test": "dagostino_pearson",
+                    "statistic": 6560.525753558255,
+                    "p_value": 0.0,
+                    "significance_level": 0.05,
+                    "conclusion": "reject_normality"
+                }
+            },
+            "value_composition": {
+                "zero_count": 120,
+                "positive_count": 9880,
+                "negative_count": 0
+            }
+        },
+        {
+            "column_name": "Machine failure",
+            "valid_count": 10000,
+            "missing_count": 0,
+            "infinite_count": 0,
+            "status": "profiled",
+            "central_tendency": {
+                "mean": 0.0339,
+                "median": 0.0,
+                "modes": [
+                    0.0
+                ],
+                "mode_frequency": 9661,
+                "mode_count": 1
+            },
+            "dispersion": {
+                "variance": 0.03275406540654065,
+                "standard_deviation": 0.18098084265065362,
+                "range": 1.0,
+                "iqr": 0.0,
+                "median_absolute_deviation": 0.0,
+                "coefficient_of_variation_pct": 533.8667924798042
+            },
+            "position": {
+                "minimum": 0.0,
+                "maximum": 1.0,
+                "q1": 0.0,
+                "q2": 0.0,
+                "q3": 0.0
+            },
+            "percentiles": {
+                "0.01": 0.0,
+                "0.05": 0.0,
+                "0.25": 0.0,
+                "0.5": 0.0,
+                "0.75": 0.0,
+                "0.95": 0.0,
+                "0.99": 1.0
+            },
+            "distribution": {
+                "skewness": 5.151851785192764,
+                "excess_kurtosis": 24.546486073902816,
+                "shape": "highly_right_skewed",
+                "normality": {
+                    "test": "dagostino_pearson",
+                    "statistic": 9844.300207800348,
+                    "p_value": 0.0,
+                    "significance_level": 0.05,
+                    "conclusion": "reject_normality"
+                }
+            },
+            "value_composition": {
+                "zero_count": 9661,
+                "positive_count": 339,
+                "negative_count": 0
+            }
+        },
+        {
+            "column_name": "TWF",
+            "valid_count": 10000,
+            "missing_count": 0,
+            "infinite_count": 0,
+            "status": "profiled",
+            "central_tendency": {
+                "mean": 0.0046,
+                "median": 0.0,
+                "modes": [
+                    0.0
+                ],
+                "mode_frequency": 9954,
+                "mode_count": 1
+            },
+            "dispersion": {
+                "variance": 0.004579297929792978,
+                "standard_deviation": 0.06767051004531426,
+                "range": 1.0,
+                "iqr": 0.0,
+                "median_absolute_deviation": 0.0,
+                "coefficient_of_variation_pct": 1471.0980444633535
+            },
+            "position": {
+                "minimum": 0.0,
+                "maximum": 1.0,
+                "q1": 0.0,
+                "q2": 0.0,
+                "q3": 0.0
+            },
+            "percentiles": {
+                "0.01": 0.0,
+                "0.05": 0.0,
+                "0.25": 0.0,
+                "0.5": 0.0,
+                "0.75": 0.0,
+                "0.95": 0.0,
+                "0.99": 0.0
+            },
+            "distribution": {
+                "skewness": 14.644461804356517,
+                "excess_kurtosis": 212.50276205251382,
+                "shape": "highly_right_skewed",
+                "normality": {
+                    "test": "dagostino_pearson",
+                    "statistic": 18762.283787810942,
+                    "p_value": 0.0,
+                    "significance_level": 0.05,
+                    "conclusion": "reject_normality"
+                }
+            },
+            "value_composition": {
+                "zero_count": 9954,
+                "positive_count": 46,
+                "negative_count": 0
+            }
+        },
+        {
+            "column_name": "HDF",
+            "valid_count": 10000,
+            "missing_count": 0,
+            "infinite_count": 0,
+            "status": "profiled",
+            "central_tendency": {
+                "mean": 0.0115,
+                "median": 0.0,
+                "modes": [
+                    0.0
+                ],
+                "mode_frequency": 9885,
+                "mode_count": 1
+            },
+            "dispersion": {
+                "variance": 0.011368886888688869,
+                "standard_deviation": 0.10662498247919606,
+                "range": 1.0,
+                "iqr": 0.0,
+                "median_absolute_deviation": 0.0,
+                "coefficient_of_variation_pct": 927.1737606886613
+            },
+            "position": {
+                "minimum": 0.0,
+                "maximum": 1.0,
+                "q1": 0.0,
+                "q2": 0.0,
+                "q3": 0.0
+            },
+            "percentiles": {
+                "0.01": 0.0,
+                "0.05": 0.0,
+                "0.25": 0.0,
+                "0.5": 0.0,
+                "0.75": 0.0,
+                "0.95": 0.0,
+                "0.99": 1.0
+            },
+            "distribution": {
+                "skewness": 9.164788742436428,
+                "excess_kurtosis": 82.00975460473451,
+                "shape": "highly_right_skewed",
+                "normality": {
+                    "test": "dagostino_pearson",
+                    "statistic": 14559.456313297193,
+                    "p_value": 0.0,
+                    "significance_level": 0.05,
+                    "conclusion": "reject_normality"
+                }
+            },
+            "value_composition": {
+                "zero_count": 9885,
+                "positive_count": 115,
+                "negative_count": 0
+            }
+        },
+        {
+            "column_name": "PWF",
+            "valid_count": 10000,
+            "missing_count": 0,
+            "infinite_count": 0,
+            "status": "profiled",
+            "central_tendency": {
+                "mean": 0.0095,
+                "median": 0.0,
+                "modes": [
+                    0.0
+                ],
+                "mode_frequency": 9905,
+                "mode_count": 1
+            },
+            "dispersion": {
+                "variance": 0.009410691069106908,
+                "standard_deviation": 0.09700871645943425,
+                "range": 1.0,
+                "iqr": 0.0,
+                "median_absolute_deviation": 0.0,
+                "coefficient_of_variation_pct": 1021.1443837835185
+            },
+            "position": {
+                "minimum": 0.0,
+                "maximum": 1.0,
+                "q1": 0.0,
+                "q2": 0.0,
+                "q3": 0.0
+            },
+            "percentiles": {
+                "0.01": 0.0,
+                "0.05": 0.0,
+                "0.25": 0.0,
+                "0.5": 0.0,
+                "0.75": 0.0,
+                "0.95": 0.0,
+                "0.99": 0.0
+            },
+            "distribution": {
+                "skewness": 10.114516252342682,
+                "excess_kurtosis": 100.32350368003752,
+                "shape": "highly_right_skewed",
+                "normality": {
+                    "test": "dagostino_pearson",
+                    "statistic": 15416.309218864804,
+                    "p_value": 0.0,
+                    "significance_level": 0.05,
+                    "conclusion": "reject_normality"
+                }
+            },
+            "value_composition": {
+                "zero_count": 9905,
+                "positive_count": 95,
+                "negative_count": 0
+            }
+        },
+        {
+            "column_name": "OSF",
+            "valid_count": 10000,
+            "missing_count": 0,
+            "infinite_count": 0,
+            "status": "profiled",
+            "central_tendency": {
+                "mean": 0.0098,
+                "median": 0.0,
+                "modes": [
+                    0.0
+                ],
+                "mode_frequency": 9902,
+                "mode_count": 1
+            },
+            "dispersion": {
+                "variance": 0.009704930493049303,
+                "standard_deviation": 0.09851360562404211,
+                "range": 1.0,
+                "iqr": 0.0,
+                "median_absolute_deviation": 0.0,
+                "coefficient_of_variation_pct": 1005.2408737147156
+            },
+            "position": {
+                "minimum": 0.0,
+                "maximum": 1.0,
+                "q1": 0.0,
+                "q2": 0.0,
+                "q3": 0.0
+            },
+            "percentiles": {
+                "0.01": 0.0,
+                "0.05": 0.0,
+                "0.25": 0.0,
+                "0.5": 0.0,
+                "0.75": 0.0,
+                "0.95": 0.0,
+                "0.99": 0.0
+            },
+            "distribution": {
+                "skewness": 9.95391563441601,
+                "excess_kurtosis": 97.09985638873353,
+                "shape": "highly_right_skewed",
+                "normality": {
+                    "test": "dagostino_pearson",
+                    "statistic": 15276.239765421378,
+                    "p_value": 0.0,
+                    "significance_level": 0.05,
+                    "conclusion": "reject_normality"
+                }
+            },
+            "value_composition": {
+                "zero_count": 9902,
+                "positive_count": 98,
+                "negative_count": 0
+            }
+        },
+        {
+            "column_name": "RNF",
+            "valid_count": 10000,
+            "missing_count": 0,
+            "infinite_count": 0,
+            "status": "profiled",
+            "central_tendency": {
+                "mean": 0.0019,
+                "median": 0.0,
+                "modes": [
+                    0.0
+                ],
+                "mode_frequency": 9981,
+                "mode_count": 1
+            },
+            "dispersion": {
+                "variance": 0.001896579657965797,
+                "standard_deviation": 0.043549737748530666,
+                "range": 1.0,
+                "iqr": 0.0,
+                "median_absolute_deviation": 0.0,
+                "coefficient_of_variation_pct": 2292.091460448982
+            },
+            "position": {
+                "minimum": 0.0,
+                "maximum": 1.0,
+                "q1": 0.0,
+                "q2": 0.0,
+                "q3": 0.0
+            },
+            "percentiles": {
+                "0.01": 0.0,
+                "0.05": 0.0,
+                "0.25": 0.0,
+                "0.5": 0.0,
+                "0.75": 0.0,
+                "0.95": 0.0,
+                "0.99": 0.0
+            },
+            "distribution": {
+                "skewness": 22.87957015055932,
+                "excess_kurtosis": 521.5790460456583,
+                "shape": "highly_right_skewed",
+                "normality": {
+                    "test": "dagostino_pearson",
+                    "statistic": 23078.184657016052,
+                    "p_value": 0.0,
+                    "significance_level": 0.05,
+                    "conclusion": "reject_normality"
+                }
+            },
+            "value_composition": {
+                "zero_count": 9981,
+                "positive_count": 19,
+                "negative_count": 0
+            }
+        }
+    ],
+    "source": {
+        "file_name": "ai4i2020.csv",
+        "file_hash": "dc6630cd9b1f0f853922fad78a1b6436570d3f1ec863f1dd5c4340ac56bc8a8e"
+    },
+    "profiling_seconds": 0.2856
+}

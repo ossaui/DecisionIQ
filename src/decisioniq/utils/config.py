@@ -62,10 +62,6 @@ def load_config(config_path=None) -> dict:
 
     return config
 
-
-if __name__ == "__main__":
-    config = load_config()
-
 def merge_configs(base: dict, override: dict) -> dict:
     """Merge default and business-specific configurations."""
 
@@ -122,7 +118,8 @@ def load_industry_config(industry: str) -> dict:
         base_config, industry_config
     )
 
-
+if __name__ == "__main__":
+    config = load_config()
     print("Configuration loaded successfully!")
     print("Project:", config["project"]["name"])
     print("Version:", config["project"]["version"])

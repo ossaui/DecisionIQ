@@ -1,0 +1,194 @@
+{
+    "dataset_summary": {
+        "row_count": 10000,
+        "column_count": 14,
+        "total_cells": 140000,
+        "memory_usage_bytes": 1190132,
+        "missing_cells": 0,
+        "missing_percentage": 0.0,
+        "duplicate_rows": 0,
+        "duplicate_percentage": 0.0
+    },
+    "candidate_keys": [
+        "UDI",
+        "Product ID"
+    ],
+    "constant_columns": [],
+    "empty_columns": [],
+    "columns": [
+        {
+            "column_name": "UDI",
+            "physical_dtype": "int64",
+            "detected_type": "integer",
+            "non_null_count": 10000,
+            "missing_count": 0,
+            "missing_percentage": 0.0,
+            "unique_count": 10000,
+            "uniqueness_ratio": 1.0,
+            "candidate_key": true,
+            "memory_bytes": 80000
+        },
+        {
+            "column_name": "Product ID",
+            "physical_dtype": "str",
+            "detected_type": "text",
+            "non_null_count": 10000,
+            "missing_count": 0,
+            "missing_percentage": 0.0,
+            "unique_count": 10000,
+            "uniqueness_ratio": 1.0,
+            "candidate_key": true,
+            "memory_bytes": 140000
+        },
+        {
+            "column_name": "Type",
+            "physical_dtype": "str",
+            "detected_type": "text",
+            "non_null_count": 10000,
+            "missing_count": 0,
+            "missing_percentage": 0.0,
+            "unique_count": 3,
+            "uniqueness_ratio": 0.0003,
+            "candidate_key": false,
+            "memory_bytes": 90000
+        },
+        {
+            "column_name": "Air temperature [K]",
+            "physical_dtype": "float64",
+            "detected_type": "float",
+            "non_null_count": 10000,
+            "missing_count": 0,
+            "missing_percentage": 0.0,
+            "unique_count": 93,
+            "uniqueness_ratio": 0.0093,
+            "candidate_key": false,
+            "memory_bytes": 80000
+        },
+        {
+            "column_name": "Process temperature [K]",
+            "physical_dtype": "float64",
+            "detected_type": "float",
+            "non_null_count": 10000,
+            "missing_count": 0,
+            "missing_percentage": 0.0,
+            "unique_count": 82,
+            "uniqueness_ratio": 0.0082,
+            "candidate_key": false,
+            "memory_bytes": 80000
+        },
+        {
+            "column_name": "Rotational speed [rpm]",
+            "physical_dtype": "int64",
+            "detected_type": "integer",
+            "non_null_count": 10000,
+            "missing_count": 0,
+            "missing_percentage": 0.0,
+            "unique_count": 941,
+            "uniqueness_ratio": 0.0941,
+            "candidate_key": false,
+            "memory_bytes": 80000
+        },
+        {
+            "column_name": "Torque [Nm]",
+            "physical_dtype": "float64",
+            "detected_type": "float",
+            "non_null_count": 10000,
+            "missing_count": 0,
+            "missing_percentage": 0.0,
+            "unique_count": 577,
+            "uniqueness_ratio": 0.0577,
+            "candidate_key": false,
+            "memory_bytes": 80000
+        },
+        {
+            "column_name": "Tool wear [min]",
+            "physical_dtype": "int64",
+            "detected_type": "integer",
+            "non_null_count": 10000,
+            "missing_count": 0,
+            "missing_percentage": 0.0,
+            "unique_count": 246,
+            "uniqueness_ratio": 0.0246,
+            "candidate_key": false,
+            "memory_bytes": 80000
+        },
+        {
+            "column_name": "Machine failure",
+            "physical_dtype": "int64",
+            "detected_type": "integer",
+            "non_null_count": 10000,
+            "missing_count": 0,
+            "missing_percentage": 0.0,
+            "unique_count": 2,
+            "uniqueness_ratio": 0.0002,
+            "candidate_key": false,
+            "memory_bytes": 80000
+        },
+        {
+            "column_name": "TWF",
+            "physical_dtype": "int64",
+            "detected_type": "integer",
+            "non_null_count": 10000,
+            "missing_count": 0,
+            "missing_percentage": 0.0,
+            "unique_count": 2,
+            "uniqueness_ratio": 0.0002,
+            "candidate_key": false,
+            "memory_bytes": 80000
+        },
+        {
+            "column_name": "HDF",
+            "physical_dtype": "int64",
+            "detected_type": "integer",
+            "non_null_count": 10000,
+            "missing_count": 0,
+            "missing_percentage": 0.0,
+            "unique_count": 2,
+            "uniqueness_ratio": 0.0002,
+            "candidate_key": false,
+            "memory_bytes": 80000
+        },
+        {
+            "column_name": "PWF",
+            "physical_dtype": "int64",
+            "detected_type": "integer",
+            "non_null_count": 10000,
+            "missing_count": 0,
+            "missing_percentage": 0.0,
+            "unique_count": 2,
+            "uniqueness_ratio": 0.0002,
+            "candidate_key": false,
+            "memory_bytes": 80000
+        },
+        {
+            "column_name": "OSF",
+            "physical_dtype": "int64",
+            "detected_type": "integer",
+            "non_null_count": 10000,
+            "missing_count": 0,
+            "missing_percentage": 0.0,
+            "unique_count": 2,
+            "uniqueness_ratio": 0.0002,
+            "candidate_key": false,
+            "memory_bytes": 80000
+        },
+        {
+            "column_name": "RNF",
+            "physical_dtype": "int64",
+            "detected_type": "integer",
+            "non_null_count": 10000,
+            "missing_count": 0,
+            "missing_percentage": 0.0,
+            "unique_count": 2,
+            "uniqueness_ratio": 0.0002,
+            "candidate_key": false,
+            "memory_bytes": 80000
+        }
+    ],
+    "source": {
+        "file_name": "ai4i2020.csv",
+        "file_hash": "dc6630cd9b1f0f853922fad78a1b6436570d3f1ec863f1dd5c4340ac56bc8a8e",
+        "industry": "manufacturing"
+    },
+    "profiling_seconds": 0.0306
+}
