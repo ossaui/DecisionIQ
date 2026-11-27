@@ -1,0 +1,49 @@
+
+# DecisionIQ Global Configuration
+
+project:
+  name: DecisionIQ
+  version: "0.1.0"
+  environment: development
+
+storage:
+  raw_path: data/raw
+  processed_path: data/processed
+  rejected_path: data/rejected
+  synthetic_path: data/synthetic
+  database_path: data/warehouse/decisioniq.duckdb
+  reports_path: reports
+
+ingestion:
+  supported_formats:
+    - csv
+    - xlsx
+    - parquet
+  encoding: utf-8
+  preserve_raw_data: true
+
+profiling:
+  detect_column_types: true
+  detect_candidate_keys: true
+  detect_missing_values: true
+  detect_duplicates: true
+  calculate_distributions: true
+
+validation:
+  missing_value_warning_threshold: 10
+  duplicate_warning_threshold: 5
+  quarantine_invalid_records: true
+  strict_schema: false
+
+analytics:
+  descriptive: true
+  diagnostic: true
+  predictive: false
+  prescriptive: false
+
+logging:
+  level: INFO
+  file: logs/decisioniq.log
+
+reproducibility:
+  random_seed: 42

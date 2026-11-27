@@ -1,0 +1,12 @@
+pandas
+numpy
+duckdb
+pyarrow
+pandera
+pyyaml
+openpyxl
+
+[dev]
+pytest
+jupyter
+matplotlib
