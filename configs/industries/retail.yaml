@@ -1,0 +1,8 @@
+business:
+  industry: retail
+  dataset_name: Online Retail II
+
+
+ingestion:
+  excel_sheet: 0
+  max_file_size_mb: 250

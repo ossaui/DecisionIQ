@@ -1,0 +1,43 @@
+# Python environment
+.venv/
+__pycache__/
+*.pyc
+*.egg-info/
+.pytest_cache/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Sensitive configuration
+.env
+.env.*
+configs/clients/
+
+# Business data
+data/raw/
+data/processed/
+data/rejected/
+data/warehouse/
+data/synthetic/
+
+# External datasets
+data/external/
+
+# Generated ingestion reports
+reports/ingestion_metadata.json
+reports/cross_industry_validation.json
+
+# Execution logs
+logs/
+
+# Database files
+*.duckdb
+*.duckdb.wal
+
+# Logs and private reports
+logs/
+reports/private/
+
+# Build artifacts
+build/
+dist/

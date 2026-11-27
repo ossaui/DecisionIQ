@@ -1,0 +1,7 @@
+﻿business:
+  industry: banking
+  dataset_name: Bank Marketing
+
+ingestion:
+  encoding: utf-8
+  csv_separator: ";"

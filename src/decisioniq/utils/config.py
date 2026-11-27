@@ -66,6 +66,63 @@ def load_config(config_path=None) -> dict:
 if __name__ == "__main__":
     config = load_config()
 
+def merge_configs(base: dict, override: dict) -> dict:
+    """Merge default and business-specific configurations."""
+
+    from copy import deepcopy
+
+    merged = deepcopy(base)
+
+    for key, value in override.items():
+
+        if (
+            key in merged
+            and isinstance(merged[key], dict)
+            and isinstance(value, dict)
+        ):
+            merged[key] = merge_configs(
+                merged[key], value
+            )
+
+        else:
+            merged[key] = deepcopy(value)
+
+    return merged
+
+
+def load_industry_config(industry: str) -> dict:
+    """Load default configuration with industry overrides."""
+
+    base_config = load_config()
+
+    industry_path = (
+        PROJECT_ROOT
+        / "configs"
+        / "industries"
+        / f"{industry}.yaml"
+    )
+
+    if not industry_path.is_file():
+        raise FileNotFoundError(
+            f"Industry configuration not found: {industry}"
+        )
+
+    with industry_path.open(
+        "r", encoding="utf-8-sig"
+    ) as file:
+
+        industry_config = yaml.safe_load(file)
+
+    if not isinstance(industry_config, dict):
+        raise ValueError(
+            "Industry configuration must be a mapping."
+        )
+
+    return merge_configs(
+        base_config, industry_config
+    )
+
+
     print("Configuration loaded successfully!")
     print("Project:", config["project"]["name"])
     print("Version:", config["project"]["version"])

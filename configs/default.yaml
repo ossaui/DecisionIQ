@@ -19,8 +19,13 @@ ingestion:
     - csv
     - xlsx
     - parquet
+
   encoding: utf-8
+  csv_separator: ","
+  excel_sheet: 0
+  max_file_size_mb: 250
   preserve_raw_data: true
+  calculate_file_hash: true
 
 profiling:
   detect_column_types: true

@@ -1,0 +1,7 @@
+﻿business:
+  industry: manufacturing
+  dataset_name: AI4I Predictive Maintenance
+
+ingestion:
+  encoding: utf-8
+  csv_separator: ","
