@@ -1,0 +1,144 @@
+
+name: Bank Marketing
+version: "1.0.0"
+industry: banking
+
+description: >
+  Historical bank marketing campaign observations.
+
+grain: One recorded marketing campaign observation
+
+allow_extra_columns: true
+minimum_rows: 1
+
+primary_key: []
+
+columns:
+
+  age:
+    dtype: integer
+    nullable: false
+    minimum: 0
+    severity: high
+
+  job:
+    dtype: string
+    nullable: false
+    allow_blank: false
+    severity: medium
+
+  marital:
+    dtype: string
+    nullable: false
+    allowed_values:
+      - married
+      - single
+      - divorced
+    severity: medium
+
+  education:
+    dtype: string
+    nullable: false
+    allowed_values:
+      - primary
+      - secondary
+      - tertiary
+      - unknown
+    severity: medium
+
+  default:
+    dtype: string
+    nullable: false
+    allowed_values: ["yes", "no"]
+    severity: high
+
+  balance:
+    dtype: numeric
+    nullable: false
+    severity: high
+
+  housing:
+    dtype: string
+    nullable: false
+    allowed_values: ["yes", "no"]
+    severity: medium
+
+  loan:
+    dtype: string
+    nullable: false
+    allowed_values: ["yes", "no"]
+    severity: medium
+
+  contact:
+    dtype: string
+    nullable: false
+    allowed_values:
+      - unknown
+      - telephone
+      - cellular
+    severity: medium
+
+  day:
+    dtype: integer
+    nullable: false
+    minimum: 1
+    maximum: 31
+    severity: high
+
+  month:
+    dtype: string
+    nullable: false
+    allowed_values:
+      - jan
+      - feb
+      - mar
+      - apr
+      - may
+      - jun
+      - jul
+      - aug
+      - sep
+      - oct
+      - nov
+      - dec
+    severity: high
+
+  duration:
+    dtype: integer
+    nullable: false
+    minimum: 0
+    severity: high
+
+  campaign:
+    dtype: integer
+    nullable: false
+    minimum: 1
+    severity: high
+
+  pdays:
+    dtype: integer
+    nullable: false
+    minimum: -1
+    severity: medium
+
+  previous:
+    dtype: integer
+    nullable: false
+    minimum: 0
+    severity: medium
+
+  poutcome:
+    dtype: string
+    nullable: false
+    allowed_values:
+      - unknown
+      - other
+      - failure
+      - success
+    severity: medium
+
+  y:
+    dtype: string
+    nullable: false
+    allowed_values: ["yes", "no"]
+    severity: critical

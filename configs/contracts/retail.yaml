@@ -1,0 +1,61 @@
+
+name: Online Retail II
+version: "1.0.0"
+industry: retail
+
+description: >
+  Historical retail invoice-line transactions,
+  including purchases and cancellations.
+
+grain: One recorded invoice line
+
+allow_extra_columns: true
+minimum_rows: 1
+
+primary_key: []
+
+columns:
+
+  Invoice:
+    dtype: string
+    nullable: false
+    allow_blank: false
+    severity: critical
+
+  StockCode:
+    dtype: string
+    nullable: false
+    allow_blank: false
+    severity: critical
+
+  Description:
+    dtype: string
+    nullable: true
+    severity: low
+
+  Quantity:
+    dtype: integer
+    nullable: false
+    severity: high
+
+  InvoiceDate:
+    dtype: datetime
+    nullable: false
+    severity: critical
+
+  Price:
+    dtype: numeric
+    nullable: false
+    minimum: 0
+    severity: high
+
+  Customer ID:
+    dtype: numeric
+    nullable: true
+    severity: medium
+
+  Country:
+    dtype: string
+    nullable: false
+    allow_blank: false
+    severity: medium

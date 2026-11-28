@@ -1,0 +1,106 @@
+
+name: AI4I Predictive Maintenance
+version: "1.0.0"
+industry: manufacturing
+
+description: >
+  Validation contract for synthetic machine
+  operating observations.
+
+grain: One machine-operation observation per UDI
+
+allow_extra_columns: true
+minimum_rows: 1
+
+primary_key:
+  - UDI
+
+columns:
+
+  UDI:
+    dtype: integer
+    nullable: false
+    unique: true
+    minimum: 1
+    severity: critical
+
+  Product ID:
+    dtype: string
+    nullable: false
+    allow_blank: false
+    severity: high
+
+  Type:
+    dtype: string
+    nullable: false
+    allowed_values:
+      - L
+      - M
+      - H
+    severity: high
+
+  Air temperature [K]:
+    dtype: numeric
+    nullable: false
+    minimum: 0
+    severity: high
+
+  Process temperature [K]:
+    dtype: numeric
+    nullable: false
+    minimum: 0
+    severity: high
+
+  Rotational speed [rpm]:
+    dtype: numeric
+    nullable: false
+    minimum: 0
+    severity: high
+
+  Torque [Nm]:
+    dtype: numeric
+    nullable: false
+    minimum: 0
+    severity: high
+
+  Tool wear [min]:
+    dtype: numeric
+    nullable: false
+    minimum: 0
+    severity: high
+
+  Machine failure:
+    dtype: integer
+    nullable: false
+    allowed_values: [0, 1]
+    severity: critical
+
+  TWF:
+    dtype: integer
+    nullable: false
+    allowed_values: [0, 1]
+    severity: high
+
+  HDF:
+    dtype: integer
+    nullable: false
+    allowed_values: [0, 1]
+    severity: high
+
+  PWF:
+    dtype: integer
+    nullable: false
+    allowed_values: [0, 1]
+    severity: high
+
+  OSF:
+    dtype: integer
+    nullable: false
+    allowed_values: [0, 1]
+    severity: high
+
+  RNF:
+    dtype: integer
+    nullable: false
+    allowed_values: [0, 1]
+    severity: high
