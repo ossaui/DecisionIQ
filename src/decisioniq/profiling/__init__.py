@@ -5,6 +5,7 @@ from decisioniq.profiling.outliers import OutlierProfiler
 from decisioniq.profiling.relationships import RelationshipProfiler
 from decisioniq.profiling.temporal import TemporalProfiler
 from decisioniq.profiling.multicollinearity import MulticollinearityProfiler
+from decisioniq.profiling.profiler import UniversalProfiler
 
 __all__ = [
     "StructuralProfiler",
@@ -13,5 +14,6 @@ __all__ = [
     "OutlierProfiler",
     "RelationshipProfiler",
     "TemporalProfiler",
-    "MulticollinearityProfiler"
+    "MulticollinearityProfiler",
+    "UniversalProfiler"
 ]

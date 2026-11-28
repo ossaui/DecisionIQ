@@ -23,6 +23,13 @@ data/synthetic/
 # External datasets
 data/external/
 
+# Generated dashboard containing analytical data
+dashboard/index.html
+
+# Generated benchmark reports
+reports/benchmarks/
+reports/profiling/
+
 # Generated ingestion reports
 reports/ingestion_metadata.json
 reports/cross_industry_validation.json

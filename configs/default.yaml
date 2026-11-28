@@ -35,7 +35,9 @@ profiling:
   detect_missing_values: true
   detect_duplicates: true
   calculate_distributions: true
-
+  
+  execution:
+    fail_fast: false
   structural:
     enabled: true
 

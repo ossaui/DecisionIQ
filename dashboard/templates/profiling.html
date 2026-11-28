@@ -1,0 +1,122 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1">
+    <title>DecisionIQ | Intelligence Studio</title>
+
+    <style>
+        __STUDIO_CSS__
+    </style>
+</head>
+
+<body>
+
+<aside class="sidebar">
+    <div class="brand">
+        <div class="logo">
+            <i data-lucide="layers"></i>
+        </div>
+        <div class="brand-text">
+            <div class="brand-name">DecisionIQ</div>
+            <div class="brand-caption">INTELLIGENCE STUDIO</div>
+        </div>
+    </div>
+
+    <nav id="navigation"></nav>
+</aside>
+
+<div class="workspace">
+
+    <header class="topbar">
+
+        <div class="flex">
+            <button class="icon-btn" id="toggle-sidebar"
+                    title="Toggle sidebar">
+                <i data-lucide="panel-left"></i>
+            </button>
+            <span class="muted" id="breadcrumb">
+                Workspace / Overview
+            </span>
+        </div>
+
+        <div class="flex wrap">
+
+            <input class="control" id="global-search"
+                   placeholder="Find a column..."
+                   aria-label="Find a column">
+
+            <select class="control" id="industry"
+                    aria-label="Select industry">
+            </select>
+
+            <button class="icon-btn" id="export-json"
+                    title="Export current report">
+                <i data-lucide="download"></i>
+            </button>
+
+            <button class="icon-btn" id="print-report"
+                    title="Print report">
+                <i data-lucide="printer"></i>
+            </button>
+
+        </div>
+    </header>
+
+    <main class="content">
+
+        <div class="hero">
+            <div class="eyebrow">
+                Decision Intelligence Workspace
+            </div>
+            <h1 id="page-title">Dataset Overview</h1>
+            <div class="muted" id="page-subtitle"></div>
+        </div>
+
+        <div id="content"></div>
+
+    </main>
+
+    <footer>
+        DecisionIQ Intelligence Studio · Analytical Foundation
+    </footer>
+
+</div>
+
+<div class="overlay" id="overlay"></div>
+
+<aside class="drawer" id="drawer"
+       aria-label="Analytical details">
+
+    <div class="spread">
+        <h2 id="drawer-title">Details</h2>
+        <button class="icon-btn" id="close-drawer"
+                title="Close details">
+            <i data-lucide="x"></i>
+        </button>
+    </div>
+
+    <div id="drawer-content"></div>
+
+</aside>
+
+<script id="decisioniq-data" type="application/json">
+__DECISIONIQ_DATA__
+</script>
+
+<script>
+__ECHARTS_JS__
+</script>
+
+<script>
+__LUCIDE_JS__
+</script>
+
+<script>
+__STUDIO_JS__
+</script>
+
+</body>
+</html>

@@ -16,6 +16,7 @@ dependencies = [
     "pyarrow",
     "pandera",
     "pyyaml",
+    "psutil",
     "openpyxl"
 ]
 
