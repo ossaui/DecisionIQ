@@ -26,6 +26,8 @@ data/external/
 # Generated dashboard containing analytical data
 dashboard/index.html
 
+reports/validation/
+
 # Generated benchmark reports
 reports/benchmarks/
 reports/profiling/
